@@ -1,0 +1,31 @@
+[
+    {
+        "cluster": "ubuntu-servers",
+        "description": "Ubuntu Servers, for system analysis and testing",
+        "active": true,
+        "machines": [
+            {
+                "hostname": "ubuntu01",
+                "domain": "virtual.com",
+                "box": "ubuntu/xenial64",
+                "cpus": 1,              
+                "memory": 768,
+                "public_network": true,
+                "ip_address_static": "192.168.40.11",
+                "interface": "enp0s8",
+                "active": true
+            },
+            {
+                "hostname": "ubuntu02",
+                "domain": "virtual.com",
+                "box": "ubuntu/xenial64",
+                "cpus": 1,              
+                "memory": 768,
+                "public_network": false,
+                "ip_address_static": "192.168.40.12",
+                "interface": "enp0s8",
+                "active": true
+            }
+        ]
+    }
+]
